@@ -1,114 +1,53 @@
 <!DOCTYPE html>
-<argument lang="fr">
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cours 1 - Introduction à HTML et CSS</title>
-    <link rel="stylesheet" href="../styles/style.css">  
-    <link rel="stylesheet" href="../styles/cours.css">
-    <link rel="icon" type="image/png" href="../images/favicon.png">
-</head>
-
-
-<body>
-    <header>
-        <h1>Cours 1 : Introduction à HTML et CSS</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Accueil</a></li>
-                <li><a href="cours1.html">Cours 1</a></li>
-                <li><a href="cours2.html">Cours 2</a></li>
-                <li><a href="cours3.html">Cours 3</a></li>
-                <li><a href="cours4.html">Cours 4</a></li>
-                <li><a href="cours5.html">Cours 5</a></li>
-            </ul>
-        </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Damso - Artiste de Musique</title>
+  </head>
+  <body
+    style="font-family: Arial, sans-serif; background-color: #111; color: #fff"
+  >
+    <header style="text-align: center; padding: 20px">
+      <h1>🎤 Damso</h1>
+      <p>Rappeur belge d'origine congolaise</p>
     </header>
 
-    <main>
-        <section>
-            <h2>Introduction à HTML</h2>
-            <p>HTML (HyperText Markup Language) est le langage standard utilisé pour créer des pages web. Il permet de structurer le contenu en utilisant des balises.</p>
+    <section style="padding: 20px">
+      <h2>📜 Biographie</h2>
+      <p>
+        Damso, de son vrai nom William Kalubi Mwamba, est un rappeur belge né à
+        Kinshasa. Il est reconnu pour ses textes profonds, sombres et
+        introspectifs. Il s'est fait connaître en 2016 avec l'album
+        <strong>Batterie Faible</strong>.<br />
 
-            <h3>Structure de base d'une page HTML</h3>
-            <pre><code>&lt;!DOCTYPE html&gt;
+        <img
+          src="Damso.jpg"
+          alt="Damso"
+          style="max-width: 30%; height: auto; margin-top: 10px"
+        />
+      </p>
+    </section>
 
+    <section style="padding: 20px">
+      <h2>📀 Albums</h2>
+      <ul>
+        <li><strong>Batterie Faible</strong> (2016)</li>
+        <li><strong>Ipséité</strong> (2017)</li>
+        <li><strong>Lithopédion</strong> (2018)</li>
+        <li><strong>QALF</strong> (2020)</li>
+        <li><strong>QALF Infinity</strong> (2021)</li>
+      </ul>
+    </section>
 
-
-
-&lt;html lang="fr"&gt;
-&lt;head&gt;                  
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;Titre de la page&lt;/title&gt;
-    &lt;link rel="stylesheet" href="styles.css"&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;h1&gt;Titre principal&lt;/h1&gt;
-    &lt;p&gt;Ceci est un paragraphe.&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-            <p>La structure de base d'une page HTML comprend la déclaration du type de document, les balises <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code> et <code>&lt;body&gt;</code>.</p>
-
-            <h3>Balises courantes</h3>
-            <ul>
-                <li><code>&lt;h1&gt; à &
-lt;h6&gt;</code> : Titres de différents niveaux</li>
-                <li><code>&lt;p&gt;</code> : Paragraphe</li
-                <li><code>&lt;a href="url"&gt;</code> : Lien hypertexte</li>
-                <li><code>&lt;img src="image.jpg" alt="description"&gt
-</code> : Image</li>
-                <li><code>&lt;ul&gt;</code> et <code>&lt;ol&gt;</code> : Listes non ordonnées et ordonnées</li>
-                <li><code>&lt;div&gt;</code> : Conteneur générique</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Introduction à CSS</h2>
-            <p>CSS (Cascading Style Sheets) est un langage utilisé pour décrire la présentation d'un document HTML. Il permet de contrôler la mise en page, les couleurs, les polices, et bien plus encore.</p>
-
-            <h3>Syntaxe de base de CSS</h3>
-            <pre><code>sélecteur {
-    propriété: valeur;
-}
-</code></pre>
-            <p>Un sélecteur cible les éléments HTML auxquels les styles seront appliqués. Les propriétés définissent les aspects visuels, et les valeurs spécifient les paramètres de ces propriétés.</p>
-
-            <h3>Exemples de propriétés CSS courantes</h3>
-            <ul>
-                <li><code>color</code> : Couleur du texte</li>
-                <li><code>background-color</code> : Couleur de fond</li>
-                <li><code>font-size</code> : Taille de la police</li>
-                <li><code>margin</code> : Espace extérieur autour d'un élément</li>
-                <li><code>padding</code> : Espace intérieur entre le contenu et la bordure d'un élément</li>
-                <li><code>border</code> : Bordure autour d'un élément</li>
-            </ul>
-
-            <h3>Exemple de règle CSS</h3>
-            <pre><code>body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-}
-h1 {
-    color: #007BFF;
-}
-p {
-    line-height: 1.6;
-}
-</code></pre>
-            <p>Dans cet exemple, les styles sont appliqués au corps de la page, aux titres de niveau 1 et aux paragraphes.</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Cours de Développement Web. Tous droits réservés.</p>
-    </footer>
-</body>
+    <section style="padding: 20px">
+      <h2>🎵 Titres populaires</h2>
+      <ul>
+        <li>Macarena</li>
+        <li>Feu de bois</li>
+        <li>Mosaïque solitaire</li>
+        <li>Débrouillard</li>
+        <li>God Bless</li>
+      </ul>
+    </section>
+  </body>
 </html>
-
-</argument>
-</html>
-
