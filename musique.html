@@ -3,104 +3,264 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mes Albums</title>
+    <title>Albums de Damso</title>
+    <link rel="stylesheet" href="style.css" />
     <style>
       body {
-        font-family: Arial, sans-serif;
         background-color: #111;
         color: #fff;
+        font-family: Arial, sans-serif;
         margin: 0;
         padding: 20px;
       }
-
       h1 {
         text-align: left;
-        margin-bottom: 30px;
       }
-
       .album {
         display: flex;
         align-items: flex-start;
-        gap: 30px;
+        gap: 20px;
         background-color: #222;
-        padding: 20px;
-        border-radius: 15px;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
-        margin-bottom: 25px;
-        max-width: 600px;
+        border-radius: 10px;
+        padding: 15px;
+        margin-bottom: 30px;
+        max-width: 800px;
       }
-
       .album img {
         width: 150px;
         height: 150px;
-        border-radius: 10px;
         object-fit: cover;
+        border-radius: 8px;
       }
-
       .tracks {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
         flex: 1;
+        margin-left: 20px;
       }
-
       .track {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         background-color: #333;
-        padding: 10px 15px;
-        border-radius: 8px;
-        margin-bottom: 10px;
-        cursor: pointer;
-        transition: 0.2s;
+        padding: 8px 12px;
+        border-radius: 6px;
+        margin-bottom: 8px;
+        transition: background-color 0.2s;
       }
-
       .track:hover {
         background-color: #555;
       }
+      .track a {
+        color: #fff;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .track .time {
+        font-size: 0.9em;
+        opacity: 0.8;
+      }
     </style>
   </head>
+
   <body>
-    <h1>🎵 Mes Albums</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="albums.html">Musique</a></li>
+        <li><a href="page1.html">Contact</a></li>
+      </ul>
+    </nav>
+    <h1>Albums de Damso</h1>
 
+    <!-- ALBUM Batterie Faible -->
     <div class="album">
-      <img src="album1.jpg" alt="Album 1" />
+      <img src="albums/baterie.jfif" alt="Batterie Faible" />
       <div class="tracks">
-        <div class="track">M1 - Soleil d'été</div>
-        <div class="track">M2 - Nuit tranquille</div>
-        <div class="track">M3 - Rêves perdus</div>
+        <div class="track">
+          <a
+            href="https://open.spotify.com/track/1Hh7lmgMPztFdclycpru3u"
+            target="_blank"
+          >
+            <span class="play-icon">▶️</span>
+            Périscope
+          </a>
+          <span class="time">2:30</span>
+        </div>
+        <div class="track">
+          <a
+            href="https://open.spotify.com/track/6Edlb9kmh22pplfOYcCjAn"
+            target="_blank"
+          >
+            <span class="play-icon">▶️</span>
+            Débrouillard
+          </a>
+          <span class="time">4:03</span>
+        </div>
+        <div class="track">
+          <a
+            href="https://open.spotify.com/track/2UGMQkcCEmiaXf5orVb1Gf"
+            target="_blank"
+          >
+            <span class="play-icon">▶️</span>
+            BruxellesVie
+          </a>
+          <span class="time">3:22</span>
+        </div>
+        <!-- tu peux ajouter les autres titres de l’album ici -->
       </div>
     </div>
 
+    <!-- ALBUM Ipséité -->
     <div class="album">
-      <img src="album2.jpg" alt="Album 2" />
+      <img src="albums/ipesite.jfif" alt="Ipséité" />
       <div class="tracks">
-        <div class="track">M1 - Horizon</div>
-        <div class="track">M2 - Dans les nuages</div>
-        <div class="track">M3 - Dernier voyage</div>
+        <div class="track">
+          <a
+            href="https://open.spotify.com/track/6x6wvkl7pGzlrV1Twn6PAG"
+            target="_blank"
+          >
+            <span class="play-icon">▶️</span>
+            Macarena
+          </a>
+          <span class="time">3:26</span>
+        </div>
+        <div class="track">
+          <a
+            href="https://open.spotify.com/track/3ENcr5FxrBDu8W6Hwb1Jwz"
+            target="_blank"
+          >
+            <span class="play-icon">▶️</span>
+            Signaler
+          </a>
+          <span class="time">3:21</span>
+        </div>
+        <div class="track">
+          <a
+            href="https://open.spotify.com/track/7Kx3kzsJHtS6l0FzFqQ1uG"
+            target="_blank"
+          >
+            <span class="play-icon">▶️</span>
+            Γ. Mosaïque Solitaire
+          </a>
+          <span class="time">5:05</span>
+        </div>
+        <!-- etc -->
       </div>
     </div>
 
+    <!-- ALBUM Lithopédion -->
     <div class="album">
-      <img src="album3.jpg" alt="Album 3" />
+      <img src="albums/lithopedion.jfif" alt="Lithopédion" />
       <div class="tracks">
-        <div class="track">M1 - Lune rouge</div>
-        <div class="track">M2 - Pluie d'été</div>
-        <div class="track">M3 - Fin du monde</div>
+        <div class="track">
+          <a
+            href="https://open.spotify.com/track/2F3QMjAr4X3EVpMUnOltbA"
+            target="_blank"
+          >
+            <span class="play-icon">▶️</span>
+            Feu de bois
+          </a>
+          <span class="time">3:48</span>
+        </div>
+        <div class="track">
+          <a
+            href="https://open.spotify.com/track/7mADg6rBfwXUxzMgReRCzz"
+            target="_blank"
+          >
+            <span class="play-icon">▶️</span>
+            Smog
+          </a>
+          <span class="time">4:01</span>
+        </div>
+        <div class="track">
+          <a
+            href="https://open.spotify.com/track/3cZs2WbqX02EDTVFBu6pjR"
+            target="_blank"
+          >
+            <span class="play-icon">▶️</span>
+            Julien
+          </a>
+          <span class="time">3:35</span>
+        </div>
+        <!-- etc -->
       </div>
     </div>
+
+    <!-- ALBUM QALF Infinity -->
     <div class="album">
-      <img src="album1.jpg" alt="Album 1" />
+      <img src="albums/qalf.jpeg" alt="QALF Infinity" />
       <div class="tracks">
-        <div class="track">M1 - Soleil d'été</div>
-        <div class="track">M2 - Nuit tranquille</div>
-        <div class="track">M3 - Rêves perdus</div>
+        <div class="track">
+          <a
+            href="https://open.spotify.com/track/2jq2a8aZbwQAVtCYgCNtZV"
+            target="_blank"
+          >
+            <span class="play-icon">▶️</span>
+            911
+          </a>
+          <span class="time">3:26</span>
+        </div>
+        <div class="track">
+          <a
+            href="https://open.spotify.com/track/2kgJ2zNfMzGiYNeYFk7Rk3"
+            target="_blank"
+          >
+            <span class="play-icon">▶️</span>
+            BXL ZOO
+          </a>
+          <span class="time">3:39</span>
+        </div>
+        <div class="track">
+          <a
+            href="https://open.spotify.com/track/1bDqHCFJfVYhXy1xRPtwzD"
+            target="_blank"
+          >
+            <span class="play-icon">▶️</span>
+            Coeur en miettes
+          </a>
+          <span class="time">4:05</span>
+        </div>
+        <!-- etc -->
       </div>
     </div>
+
+    <!-- ALBUM J’ai menti -->
     <div class="album">
-      <img src="album1.jpg" alt="Album 1" />
+      <img src="albums/menti.jpg" alt="J’ai menti" />
       <div class="tracks">
-        <div class="track">M1 - Soleil d'été</div>
-        <div class="track">M2 - Nuit tranquille</div>
-        <div class="track">M3 - Rêves perdus</div>
+        <div class="track">
+          <a
+            href="https://open.spotify.com/track/5PqzZHo9kZJ8TkMiv8SRtg"
+            target="_blank"
+          >
+            <span class="play-icon">▶️</span>
+            Chrome
+          </a>
+          <span class="time">3:33</span>
+        </div>
+        <div class="track">
+          <a
+            href="https://open.spotify.com/intl-fr/track/0qGy0pxEhbiMsDQhwOKTAg?si=3e91762a766b49f6"
+            target="_blank"
+          >
+            <span class="play-icon">▶️</span>
+            Laisse-moi tranquille
+          </a>
+          <span class="time">3:29</span>
+        </div>
+        <div class="track">
+          <a
+            href="https://open.spotify.com/track/0jnp1qZJZefwGBmMd4J4De"
+            target="_blank"
+          >
+            <span class="play-icon">▶️</span>
+            Alpha (feat. Kalash)
+          </a>
+          <span class="time">4:01</span>
+        </div>
       </div>
     </div>
   </body>
