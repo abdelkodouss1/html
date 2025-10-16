@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mes Albums</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #111;
+        color: #fff;
+        margin: 0;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: left;
+        margin-bottom: 30px;
+      }
+
+      .album {
+        display: flex;
+        align-items: flex-start;
+        gap: 30px;
+        background-color: #222;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+        margin-bottom: 25px;
+        max-width: 600px;
+      }
+
+      .album img {
+        width: 150px;
+        height: 150px;
+        border-radius: 10px;
+        object-fit: cover;
+      }
+
+      .tracks {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex: 1;
+      }
+
+      .track {
+        background-color: #333;
+        padding: 10px 15px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        transition: 0.2s;
+      }
+
+      .track:hover {
+        background-color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🎵 Mes Albums</h1>
+
+    <div class="album">
+      <img src="album1.jpg" alt="Album 1" />
+      <div class="tracks">
+        <div class="track">M1 - Soleil d'été</div>
+        <div class="track">M2 - Nuit tranquille</div>
+        <div class="track">M3 - Rêves perdus</div>
+      </div>
+    </div>
+
+    <div class="album">
+      <img src="album2.jpg" alt="Album 2" />
+      <div class="tracks">
+        <div class="track">M1 - Horizon</div>
+        <div class="track">M2 - Dans les nuages</div>
+        <div class="track">M3 - Dernier voyage</div>
+      </div>
+    </div>
+
+    <div class="album">
+      <img src="album3.jpg" alt="Album 3" />
+      <div class="tracks">
+        <div class="track">M1 - Lune rouge</div>
+        <div class="track">M2 - Pluie d'été</div>
+        <div class="track">M3 - Fin du monde</div>
+      </div>
+    </div>
+    <div class="album">
+      <img src="album1.jpg" alt="Album 1" />
+      <div class="tracks">
+        <div class="track">M1 - Soleil d'été</div>
+        <div class="track">M2 - Nuit tranquille</div>
+        <div class="track">M3 - Rêves perdus</div>
+      </div>
+    </div>
+    <div class="album">
+      <img src="album1.jpg" alt="Album 1" />
+      <div class="tracks">
+        <div class="track">M1 - Soleil d'été</div>
+        <div class="track">M2 - Nuit tranquille</div>
+        <div class="track">M3 - Rêves perdus</div>
+      </div>
+    </div>
+  </body>
+</html>

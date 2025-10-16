@@ -2,52 +2,60 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Damso - Artiste de Musique</title>
+    <!-- Lien vers le fichier CSS -->
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body
-    style="font-family: Arial, sans-serif; background-color: #111; color: #fff"
-  >
-    <header style="text-align: center; padding: 20px">
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <ul>
+        <li><a href="acceuil.html">Accueil</a></li>
+        <li><a href="albums.html">albums</a></li>
+        <li><a href="page1.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- En-tête -->
+    <header>
       <h1>🎤 Damso</h1>
       <p>Rappeur belge d'origine congolaise</p>
     </header>
 
-    <section style="padding: 20px">
-      <h2>📜 Biographie</h2>
-      <p>
-        Damso, de son vrai nom William Kalubi Mwamba, est un rappeur belge né à
-        Kinshasa. Il est reconnu pour ses textes profonds, sombres et
-        introspectifs. Il s'est fait connaître en 2016 avec l'album
-        <strong>Batterie Faible</strong>.<br />
+    <!-- Contenu principal -->
+    <main>
+      <section>
+        <h2>📜 Biographie</h2>
+        <p>
+          Damso, de son vrai nom William Kalubi Mwamba, est un rappeur belge né
+          à Kinshasa. Il est reconnu pour ses textes profonds, sombres et
+          introspectifs. Il s'est fait connaître en 2016 avec l'album
+          <strong>Batterie Faible</strong>.
+        </p>
+        <img src="albums/Damso.jpg" alt="Damso" />
+      </section>
+      <section>
+        <h2>Albums</h2>
+        <ul>
+          <li><strong>Batterie Faible</strong> (2016)</li>
+          <li><strong>Ipséité</strong> (2017)</li>
+          <li><strong>Lithopédion</strong> (2018)</li>
+          <li><strong>QALF</strong> (2020)</li>
+          <li><strong>QALF Infinity</strong> (2021)</li>
+        </ul>
+      </section>
 
-        <img
-          src="Damso.jpg"
-          alt="Damso"
-          style="max-width: 30%; height: auto; margin-top: 10px"
-        />
-      </p>
-    </section>
-
-    <section style="padding: 20px">
-      <h2>📀 Albums</h2>
-      <ul>
-        <li><strong>Batterie Faible</strong> (2016)</li>
-        <li><strong>Ipséité</strong> (2017)</li>
-        <li><strong>Lithopédion</strong> (2018)</li>
-        <li><strong>QALF</strong> (2020)</li>
-        <li><strong>QALF Infinity</strong> (2021)</li>
-      </ul>
-    </section>
-
-    <section style="padding: 20px">
-      <h2>🎵 Titres populaires</h2>
-      <ul>
-        <li>Macarena</li>
-        <li>Feu de bois</li>
-        <li>Mosaïque solitaire</li>
-        <li>Débrouillard</li>
-        <li>God Bless</li>
-      </ul>
-    </section>
+      <section>
+        <h2>Titres populaires</h2>
+        <ul>
+          <li>Macarena</li>
+          <li>Feu de bois</li>
+          <li>Mosaïque solitaire</li>
+          <li>Débrouillard</li>
+          <li>God Bless</li>
+        </ul>
+      </section>
+    </main>
   </body>
 </html>
